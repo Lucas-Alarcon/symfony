@@ -1,0 +1,7 @@
+#index:
+#    path: /
+#    controller: App\Controller\GalerieController::index
+
+#galerie:
+#    path: /galerie
+#    controller: App\Controller\GalerieController::galerie
