@@ -1,12 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Accueil{% endblock %}
+{% block title %}Photo {{photo}}{% endblock %}
 
 {% block body %}
 
 <div class="container">
     <div class="row justify-content-center">
-        <img class="" src= /symfony/public/images/bienvenue.jpg alt="">
+        <img class="" src= /symfony/public/images/{{photo}}.jpg alt="">
     </div>
 </div>
 {% endblock %}

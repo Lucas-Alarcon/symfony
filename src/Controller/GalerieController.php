@@ -22,11 +22,21 @@ class GalerieController extends AbstractController
      */
     public function galerie()
     {
-        $images = ['image1', 'image2', 'image3', 'image4','image5', 'image6'];
+        $images = ['image1' => 'Forêt', 'image2' => 'Pont 1', 'image3' => 'Pont 2', 'image4' => 'Jardin', 'image5' => 'Lac', 'image6' => 'Pont 3'];
 
         return $this->render('site/galerie.html.twig', [
-            'qty' => 5,
+            'qty' => 6,
             'images' => $images,
+        ]);
+    }
+
+    /**
+     * @Route("/galerie/{photo}", name="photo")
+     */
+    public function photo(string $photo)
+    {
+        return $this->render('site/photo.html.twig', [
+            'photo' => $photo,
         ]);
     }
 }

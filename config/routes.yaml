@@ -1,7 +1,8 @@
-#index:
+# index:
 #    path: /
 #    controller: App\Controller\GalerieController::index
+#    requirements:
 
-#galerie:
+# galerie:
 #    path: /galerie
 #    controller: App\Controller\GalerieController::galerie

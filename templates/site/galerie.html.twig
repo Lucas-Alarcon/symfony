@@ -7,13 +7,13 @@
 <div class="container">
     <div class="row">
 
-        {% for image in images|slice(0,qty) %}
+        {% for key, name in images|slice(0,qty) %}
         <div class="col-lg-3 col-md-6 mb-4">
             <div class="card h-100">
-                <a href="#"><img class="card-img-top" src= /symfony/public/images/{{image}}.jpg alt=""></a>
+                <a href="{{ path('photo', {photo: key}) }}"><img class="card-img-top" src= /symfony/public/images/{{key}}.jpg alt=""></a>
                 <div class="card-body">
                     <h4 class="card-title">
-                    {{image}}
+                    {{name}}
                     </h4>
                 </div>
             </div>
